@@ -34,24 +34,19 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="container mx-auto px-4 py-3 relative flex items-center justify-end md:justify-between">
-          {/* Logo centralizado no mobile */}
-          <img
-            src={Logo}
-            alt="KSA Enxovais"
-            className="h-10 md:h-12 absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0"
-          />
-
-          {/* Botão */}
-          <Button
-            asChild
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
-          >
+        <div className="container mx-auto px-4 py-4 md:py-5 flex items-center justify-between">
+          <div className="flex-1 flex justify-center md:justify-start">
+            <img 
+              src={Logo} 
+              alt="KSA Enxovais" 
+              className="h-14 md:h-20 lg:h-24 w-auto drop-shadow-sm" 
+            />
+          </div>
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-sm md:text-base px-4 md:px-6 shrink-0">
             <a href={PAYMENT_LINK}>Comprar Agora</a>
           </Button>
         </div>
       </header>
-
       {/* Urgency Counter */}
       <section className="bg-background py-4">
         <div className="container mx-auto px-4">
