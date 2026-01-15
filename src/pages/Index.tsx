@@ -17,6 +17,9 @@ import {
   MessageCircle,
   ChevronRight
 } from "lucide-react";
+import UrgencyCounter from "@/components/UrgencyCounter";
+import FAQSection from "@/components/FAQSection";
+import ProductGallery from "@/components/ProductGallery";
 
 const PAYMENT_LINK = "#"; // Substituir pelo link de pagamento real
 
@@ -42,50 +45,67 @@ const Index = () => {
         </div>
       </header>
 
+      {/* Urgency Counter */}
+      <section className="bg-background py-4">
+        <div className="container mx-auto px-4">
+          <UrgencyCounter />
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/10 via-accent to-background py-12 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-4 bg-secondary text-secondary-foreground px-4 py-1 text-sm font-semibold">
-              🔥 OPORTUNIDADE PARA REVENDEDORES
-            </Badge>
-            
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-6 leading-tight">
-              Ganhe Dinheiro Revendendo{" "}
-              <span className="text-primary">Jogos de Lençol</span>{" "}
-              Direto da Fábrica
-            </h1>
-            
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Kit com 6 jogos de lençol de malha a preço de atacado. 
-              Produto de alta saída, fácil de vender e com margem de lucro garantida!
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Text Content */}
+              <div className="text-center md:text-left order-2 md:order-1">
+                <Badge className="mb-4 bg-secondary text-secondary-foreground px-4 py-1 text-sm font-semibold">
+                  🔥 OPORTUNIDADE PARA REVENDEDORES
+                </Badge>
+                
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-6 leading-tight">
+                  Ganhe Dinheiro Revendendo{" "}
+                  <span className="text-primary">Jogos de Lençol</span>{" "}
+                  Direto da Fábrica
+                </h1>
+                
+                <p className="text-lg md:text-xl text-muted-foreground mb-8">
+                  Kit com 6 jogos de lençol de malha a preço de atacado. 
+                  Produto de alta saída, fácil de vender e com margem de lucro garantida!
+                </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <div className="bg-background rounded-2xl p-6 shadow-lg border border-border">
-                <p className="text-muted-foreground text-sm mb-1">Kit Revenda (6 jogos)</p>
-                <p className="text-4xl md:text-5xl font-extrabold text-primary">R$ 650</p>
-                <p className="text-muted-foreground text-sm">ou 10x de R$ 65 sem juros</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center mb-8">
+                  <div className="bg-background rounded-2xl p-6 shadow-lg border border-border">
+                    <p className="text-muted-foreground text-sm mb-1">Kit Revenda (6 jogos)</p>
+                    <p className="text-4xl md:text-5xl font-extrabold text-primary">R$ 650</p>
+                    <p className="text-muted-foreground text-sm">ou 10x de R$ 65 sem juros</p>
+                  </div>
+                </div>
+
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                  <a href={PAYMENT_LINK} className="flex items-center gap-2">
+                    QUERO COMEÇAR A REVENDER
+                    <ChevronRight className="w-5 h-5" />
+                  </a>
+                </Button>
+
+                <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-8 text-sm text-muted-foreground">
+                  <span className="flex items-center gap-1">
+                    <CheckCircle className="w-4 h-4 text-primary" /> Pronta Entrega
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <CheckCircle className="w-4 h-4 text-primary" /> Envio Imediato
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <CheckCircle className="w-4 h-4 text-primary" /> Parcelamento em 10x
+                  </span>
+                </div>
               </div>
-            </div>
 
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
-              <a href={PAYMENT_LINK} className="flex items-center gap-2">
-                QUERO COMEÇAR A REVENDER
-                <ChevronRight className="w-5 h-5" />
-              </a>
-            </Button>
-
-            <div className="flex flex-wrap justify-center gap-4 mt-8 text-sm text-muted-foreground">
-              <span className="flex items-center gap-1">
-                <CheckCircle className="w-4 h-4 text-primary" /> Pronta Entrega
-              </span>
-              <span className="flex items-center gap-1">
-                <CheckCircle className="w-4 h-4 text-primary" /> Envio Imediato
-              </span>
-              <span className="flex items-center gap-1">
-                <CheckCircle className="w-4 h-4 text-primary" /> Parcelamento em 10x
-              </span>
+              {/* Product Gallery */}
+              <div className="order-1 md:order-2">
+                <ProductGallery />
+              </div>
             </div>
           </div>
         </div>
@@ -402,6 +422,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <FAQSection />
+
       {/* CTA Final */}
       <section className="py-12 md:py-20 bg-gradient-to-br from-primary to-primary/80">
         <div className="container mx-auto px-4 text-center">
@@ -452,7 +475,7 @@ const Index = () => {
             Confecção própria de jogos de lençol • Atendemos todo o Brasil
           </p>
           <p className="text-muted/60 text-xs">
-            © 2026 KSA Enxovais. Todos os direitos reservados.
+            © 2024 KSA Enxovais. Todos os direitos reservados.
           </p>
         </div>
       </footer>
