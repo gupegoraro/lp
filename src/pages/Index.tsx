@@ -469,7 +469,11 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold">K</span>
+              <img 
+              src={Logo} 
+              alt="KSA Enxovais" 
+              className="h-14 md:h-20 lg:h-24 w-auto drop-shadow-sm" 
+            />
             </div>
             <span className="font-bold text-lg text-background">KSA Enxovais</span>
           </div>
