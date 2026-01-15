@@ -472,16 +472,15 @@ const Index = () => {
               <img 
               src={Logo} 
               alt="KSA Enxovais" 
-              className="h-14 md:h-20 lg:h-24 w-auto drop-shadow-sm" 
-            />
+              className="h-14 md:h-20 lg:h-24 w-auto drop-shadow-sm"
+              />
             </div>
-            <span className="font-bold text-lg text-background">KSA Enxovais</span>
           </div>
           <p className="text-muted text-sm mb-4">
             Confecção própria de jogos de lençol • Atendemos todo o Brasil
           </p>
           <p className="text-muted/60 text-xs">
-            © 2024 KSA Enxovais. Todos os direitos reservados.
+            © 2026 KSA Enxovais. Todos os direitos reservados.
           </p>
         </div>
       </footer>
