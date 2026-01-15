@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import logoKsa from "@/assets/logo-ksa-enxovais.png";
+import Logo from "@/assets/logo-ksa-enxovais.svg";
 import { 
   Package, 
   Truck, 
@@ -36,7 +36,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 md:py-5 flex items-center justify-between">
           <div className="flex-1 flex justify-center md:justify-start">
             <img 
-              src={logoKsa} 
+              src={Logo} 
               alt="KSA Enxovais" 
               className="h-14 md:h-20 lg:h-24 w-auto drop-shadow-sm" 
             />
