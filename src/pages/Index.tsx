@@ -468,10 +468,6 @@ const Index = () => {
       <footer className="bg-foreground py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold">K</span>
-            </div>
-            <span className="font-bold text-lg text-background">KSA Enxovais</span>
           </div>
           <p className="text-muted text-sm mb-4">
             Confecção própria de jogos de lençol • Atendemos todo o Brasil
