@@ -467,8 +467,6 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-foreground py-8">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-          </div>
           <p className="text-muted text-sm mb-4">
             Confecção própria • Atendemos todo o Brasil
           </p>
