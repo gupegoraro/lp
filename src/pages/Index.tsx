@@ -36,8 +36,8 @@ const Index = () => {
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <img src={Logo} alt="KSA Enxovais" className="h-10 md:h-12" />
+            <div>
+              <span><img src={Logo} alt="KSA Enxovais" className="h-10 md:h-12" /></span> 
             </div>
           </div>
           <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
