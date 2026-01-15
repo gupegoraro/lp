@@ -470,10 +470,10 @@ const Index = () => {
           <div className="flex items-center justify-center gap-2 mb-4">
           </div>
           <p className="text-muted text-sm mb-4">
-            Confecção própria de jogos de lençol • Atendemos todo o Brasil
+            Confecção própria • Atendemos todo o Brasil
           </p>
           <p className="text-muted/60 text-xs">
-            © 2024 KSA Enxovais. Todos os direitos reservados.
+            © 2026 KSA Enxovais. Todos os direitos reservados.
           </p>
         </div>
       </footer>
