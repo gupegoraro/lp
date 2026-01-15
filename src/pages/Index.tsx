@@ -20,6 +20,8 @@ import {
 import UrgencyCounter from "@/components/UrgencyCounter";
 import FAQSection from "@/components/FAQSection";
 import ProductGallery from "@/components/ProductGallery";
+import Logo from "@/assets/logo/ksa-enxovais.svg";
+
 
 const PAYMENT_LINK = "#"; // Substituir pelo link de pagamento real
 
@@ -35,9 +37,8 @@ const Index = () => {
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">K</span>
+              <img src={Logo} alt="KSA Enxovais" className="h-10 md:h-12" />
             </div>
-            <span className="font-bold text-xl text-foreground">KSA Enxovais</span>
           </div>
           <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
             <a href={PAYMENT_LINK}>Comprar Agora</a>
