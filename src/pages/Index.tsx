@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import Logo from "@/assets/loog/ksa-enxovais.svg";
+import Logo from "@/assets/logo/ksa-enxovais.svg";
 import { 
   Package, 
   Truck, 
