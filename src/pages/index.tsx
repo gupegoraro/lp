@@ -452,7 +452,7 @@ const Index = () => {
             Confecção própria de jogos de lençol • Atendemos todo o Brasil
           </p>
           <p className="text-muted/60 text-xs">
-            © 2024 KSA Enxovais. Todos os direitos reservados.
+            © 2026 KSA Enxovais. Todos os direitos reservados.
           </p>
         </div>
       </footer>
